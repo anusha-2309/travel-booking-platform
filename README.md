@@ -1,37 +1,38 @@
+# 🌍 Travel Booking Platform
+
+A full-stack travel booking backend built with:
+
+- Flask
+- MongoDB
+- Redis (Caching)
+- JWT Authentication
+- Docker & Docker Compose
+- Modern Frontend UI
 
 ---
 
-# 💎 Now Your GitHub Looks Professional
+## 🚀 Features
 
-Instead of:
-
-❌ random college code
-
-You now have:
-
-✔ Structured repo  
-✔ README  
-✔ Docker setup  
-✔ Clean commits  
-✔ Proper description  
+- User Registration & Login (JWT Auth)
+- Browse Travel Packages
+- Book Travel Packages
+- View Booking History
+- Redis Caching for Packages
+- Dockerized Deployment
 
 ---
 
-# 🔥 Want Next Level?
+## 🛠 Tech Stack
 
-We can:
+Backend: Flask  
+Database: MongoDB  
+Cache: Redis  
+Containerization: Docker  
+Authentication: JWT  
 
-- Add project screenshots in README
-- Add architecture diagram
-- Add API documentation section
-- Add Postman collection
-- Add deployment guide
-- Add GitHub badges
+---
 
-Tell me:
+## 🐳 Run With Docker
 
-👉 “Make it resume-ready”
-or  
-👉 “Add screenshots + badges”
-
-And we make it recruiter-attraction level 😎🔥
+```bash
+docker-compose up --build
