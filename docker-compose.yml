@@ -1,0 +1,26 @@
+services:
+
+  mongo:
+    image: mongo
+    container_name: travel_mongo
+    ports:
+      - "27017:27017"
+
+  redis:
+    image: redis
+    container_name: travel_redis
+    ports:
+      - "6379:6379"
+
+  backend:
+    build: .
+    container_name: travel_backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+      - redis
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379

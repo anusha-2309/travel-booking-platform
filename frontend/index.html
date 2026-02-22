@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Booking Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>🌍 TravelPro</h2>
+    <button onclick="logout()">Logout</button>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Explore The World With Us ✈️</h1>
+    <p>Book your dream vacation in minutes.</p>
+</section>
+
+<!-- AUTH SECTION -->
+<section class="auth-section">
+
+    <div class="auth-card">
+        <h3>Register</h3>
+        <input id="reg-name" placeholder="Full Name">
+        <input id="reg-email" placeholder="Email">
+        <input id="reg-password" placeholder="Password" type="password">
+        <button onclick="register()">Register</button>
+    </div>
+
+    <div class="auth-card">
+        <h3>Login</h3>
+        <input id="login-email" placeholder="Email">
+        <input id="login-password" placeholder="Password" type="password">
+        <button onclick="login()">Login</button>
+    </div>
+
+</section>
+
+<!-- PACKAGES SECTION -->
+<section class="packages-section">
+    <h2>Available Travel Packages</h2>
+    <button class="load-btn" onclick="getPackages()">Load Packages</button>
+    <div id="packages" class="package-grid"></div>
+</section>
+
+<!-- BOOKINGS -->
+<section class="bookings-section">
+    <h2>My Bookings</h2>
+    <button class="load-btn" onclick="getBookings()">View My Bookings</button>
+    <ul id="bookings"></ul>
+</section>
+
+<footer>
+    <p>© 2026 TravelPro | Built with Flask, MongoDB, Redis & Docker 🚀</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
